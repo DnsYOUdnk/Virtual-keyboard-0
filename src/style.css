@@ -70,3 +70,9 @@ body {
     color: #ffffff;
     background: #394a40cb;
 }
+
+.keyboard__keys.CapsLock.active {
+    color: #ffffff;
+    background: #394a40cb;
+    
+}

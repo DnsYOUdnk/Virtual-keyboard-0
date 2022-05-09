@@ -1,4 +1,4 @@
-const keyboard = [
+const KeyboardData = [
     {
         "Backquote": {
             "valueEn": {
@@ -747,4 +747,4 @@ const keyboard = [
     }
 ];
 
-export default keyboard
+export default KeyboardData
