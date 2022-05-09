@@ -1,7 +1,7 @@
-// import './style.css';
-// import {keyboardApp} from './components/createKeyboard.js'
+import './style.css';
+import {createKeyboard} from './components/createKeyboard.js'
 
-
+createKeyboard()
 
 /* document.addEventListener('keydown', (event) => {
     //event.code - имя клавиши  event.key - значение клавиши; {name: , valueEng: , valueRus: }
