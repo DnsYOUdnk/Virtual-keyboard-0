@@ -7,7 +7,6 @@ const createKeyboard = () => {
             keyboardWripper.classList.add('keyboard__wrapper')
       
       const getKeyboard = (data, lang, shiftOn) => {
-            // console.log(data)
             let newKeyboardData = data,
                 keyboardKeys = '';
             newKeyboardData.forEach(element => {

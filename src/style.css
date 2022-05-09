@@ -2,10 +2,42 @@
     margin: 0;
     padding: 0;
 }
-/* 
-#app__keyboard {
+
+body {
+    background-color: rgba(0, 0, 0, 0.131);
+}
+
+#app-keyboard {
+    max-width: 70vw;
+    height: 100vh;
     margin: 0 auto;
-    width: 800px;
-    border: 1px solid red;
-    height: 100px;
-} */
+    background-color: rgba(255, 255, 255, 0.647);
+}
+
+.keyboard__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.keyboard__keys {
+    height: 45px;
+    width: 6%;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none ;
+    background: #b1cbbbc9;
+    color: #000000;
+    font-size: 1.05rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+}
+
+.keyboard__keys:hover {
+    color: #ffffff;
+    background: #394a40cb;
+}

@@ -626,6 +626,16 @@ const keyboard = [
         }
     },
     {
+        "ArrowUp": {
+            "valueEn": {
+                "key": "&#9650;",
+            },
+            "valueRu": {
+                "key": "&#9650;",
+            }
+        }
+    },
+    {
         "ShiftRight": {
             "valueEn": {
                 "key": "Shift",
@@ -648,10 +658,10 @@ const keyboard = [
     {
         "MetaLeft": {
             "valueEn": {
-                "key": "Meta",
+                "key": "Win",
             },
             "valueRu": {
-                "key": "Meta",
+                "key": "Win",
             }
         }
     },
@@ -698,40 +708,30 @@ const keyboard = [
     {
         "ArrowLeft": {
             "valueEn": {
-                "key": "&larr;",
+                "key": "&#9668;",
             },
             "valueRu": {
-                "key": "&larr;",
-            }
-        }
-    },
-    {
-        "ArrowUp": {
-            "valueEn": {
-                "key": "&uarr;",
-            },
-            "valueRu": {
-                "key": "&uarr;",
+                "key": "&#9668;",
             }
         }
     },
     {
         "ArrowDown": {
             "valueEn": {
-                "key": "&darr;",
+                "key": "&#9660;",
             },
             "valueRu": {
-                "key": "&darr;",
+                "key": "&#9660;",
             }
         }
     },
     {
         "ArrowRight": {
             "valueEn": {
-                "key": "&rarr;",
+                "key": "&#9658;",
             },
             "valueRu": {
-                "key": "&rarr;",
+                "key": "&#9658;",
             }
         }
     }
