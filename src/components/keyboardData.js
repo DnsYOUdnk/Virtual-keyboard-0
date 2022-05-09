@@ -332,6 +332,16 @@ const keyboard = [
         }
     },
     {
+        "Delete": {
+            "valueEn": {
+                "key": "Del",
+            },
+            "valueRu": {
+                "key": "Del",
+            }
+        }
+    },
+    {
         "CapsLock": {
             "valueEn": {
                 "key": "CapsLock",
