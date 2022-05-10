@@ -46,6 +46,8 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    transition: 0.1s;
+
 }
 
 .keyboard__keys.Backspace,
@@ -66,15 +68,19 @@ body {
     flex-basis: 38%;
 }
 
-.keyboard__keys:hover {
+.keyboard__keys:hover,
+.keyboard__keys.active__press {
     color: #ffffff;
     background: #394a40cb;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 6px #27332cd6;
 }
 
 .keyboard__keys.CapsLock.active {
     color: #ffffff;
     background: #394a40cb;
-    
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 6px  #27332cd6;
 }
 
 .app-keyboard__other-inform {
