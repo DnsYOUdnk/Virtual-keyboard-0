@@ -638,10 +638,10 @@ const KeyboardData = [
     {
         "ArrowUp": {
             "valueEn": {
-                "key": "&#9650;",
+                "key": "▲",
             },
             "valueRu": {
-                "key": "&#9650;",
+                "key": "▲",
             }
         }
     },
@@ -718,30 +718,30 @@ const KeyboardData = [
     {
         "ArrowLeft": {
             "valueEn": {
-                "key": "&#9668;",
+                "key": "◄",
             },
             "valueRu": {
-                "key": "&#9668;",
+                "key": "◄",
             }
         }
     },
     {
         "ArrowDown": {
             "valueEn": {
-                "key": "&#9660;",
+                "key": "▼",
             },
             "valueRu": {
-                "key": "&#9660;",
+                "key": "▼",
             }
         }
     },
     {
         "ArrowRight": {
             "valueEn": {
-                "key": "&#9658;",
+                "key": "►",
             },
             "valueRu": {
-                "key": "&#9658;",
+                "key": "►",
             }
         }
     }
