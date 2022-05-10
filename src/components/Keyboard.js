@@ -12,12 +12,17 @@ function Keyboard() {
       this.create = () => {
             const keyboardApp = document.createElement('div');
                   keyboardApp.setAttribute('id',`app-keyboard`);
+            const otherInf = document.createElement('div');
+                  otherInf.classList.add(`app-keyboard__other-inform`);
+                  otherInf.innerHTML = `
+                                          <div>Операционная система Windows. Переключение языка Shift+Alt</div>
+                                          `
             this.keyboardWripper = document.createElement('div');
             this.keyboardWripper.classList.add('keyboard__wrapper');
             
             this.getKeys();
             
-            keyboardApp.appendChild(this.keyboardWripper);
+            keyboardApp.append(this.keyboardWripper, otherInf);
             document.body.append(keyboardApp);
       };
 
@@ -66,6 +71,17 @@ function Keyboard() {
                   // event.code - имя клавиши  event.key - значение клавиши; {name: , valueEng: , valueRus: }
                   // console.log(event.code, event.key, event);
                   // console.log(event.getModifierState("CapsLock"))
+            })
+            document.addEventListener('keydown', (event) => {
+                  if(event.key === 'Shift') {
+                        document.addEventListener('keydown', (e) => {
+                              if(e.code === 'AltLeft') {
+                                    e.preventDefault()
+                                    console.log('asd')
+                              } else {
+                              }
+                        })
+                  }
             })
       }
 }

@@ -76,3 +76,8 @@ body {
     background: #394a40cb;
     
 }
+
+.app-keyboard__other-inform {
+    margin-top: 40px;
+    font-size: 22px;
+}
