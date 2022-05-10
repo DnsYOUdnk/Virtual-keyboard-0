@@ -17,7 +17,7 @@ function Keyboard() {
             const otherInf = document.createElement('div');
                   otherInf.classList.add(`app-keyboard__other-inform`);
                   otherInf.innerHTML = `
-                                          <div>Операционная система Windows. Переключение языка Shift+Alt</div>
+                                          <div>Операционная система Windows. Переключение языка Shift+Alt. Del - удаление всего текста.</div>
                                           `
             const textareaBlock = document.createElement('div');
                   textareaBlock.classList.add(`app-keyboard__textarea`);
@@ -81,6 +81,7 @@ function Keyboard() {
                                res = !res ? item[Object.keys(item)[0]]['value' + keyboardProperties.lang]['key'] : res;
                               return res
                         })[0]  
+                      keySymbol = keySymbol.length === 1 && keyboardProperties.capsOn && shiftOn[0]? keySymbol.toLowerCase() : keySymbol.length === 1 && keyboardProperties.capsOn ? keySymbol.toUpperCase() : keySymbol;
                   this.inputTextKeyboard(keySymbol)
                   localStorage.setItem('keyboardProperties',JSON.stringify(keyboardProperties))
                   
@@ -123,7 +124,18 @@ function Keyboard() {
 
       this.inputTextKeyboard = (keySym) => {
             textInput += keySym.length === 1 ? keySym : '';
-            console.log(keySym.length)
+            switch (keySym.split(' ')[0]) {
+                  case 'Enter' : textInput += `
+`;
+                  break;
+                  case 'Tab' : textInput += '   ';
+                  break;
+                  case 'Backspace': textInput = textInput.slice(0,textInput.length-1);
+                  break;
+                  case 'Del': textInput = '';
+                  break;
+
+            }
             this.textareaItem.value = textInput;
       }
 }
