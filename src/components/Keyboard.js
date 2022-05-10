@@ -49,39 +49,17 @@ function Keyboard() {
                   switch(event.code) {
                         case 'CapsLock' : keyboardProperties.capsOn =  !keyboardProperties.capsOn ? true : false;
                         break;
+                        case 'AltLeft' : event.getModifierState('Shift') && (keyboardProperties.lang = keyboardProperties.lang === 'En' ? 'Ru' : 'En');
                         default :
                         break;
                   }
                   
                   this.getKeys()
                   localStorage.setItem('keyboardProperties',JSON.stringify(keyboardProperties))
-                  /* if(event.key === 'Shift') {
-                        // this.keyboardWripper.innerHTML = createKeysKeyboard(KeyboardData, 'En', true, false);
-                        document.addEventListener('keydown', (event1) => {
-                              if(event1.key === 'Alt'){
-                                    
-                                    keyboardProperties.lang = keyboardProperties.lang === 'En' ? 'Ru' : 'En'
-                                    this.keyboardWripper.innerHTML = this.getKeys(KeyboardData, keyboardProperties.lang, false, false);
-                              }
-                        })
-                        // this.keyboardWripper.innerHTML = createKeysKeyboard(KeyboardData, 'En', false, true);
-                  } else {
-                        // this.keyboardWripper.innerHTML = createKeysKeyboard(KeyboardData, 'En', false, false);
-                  } */
+                  
                   // event.code - имя клавиши  event.key - значение клавиши; {name: , valueEng: , valueRus: }
                   // console.log(event.code, event.key, event);
                   // console.log(event.getModifierState("CapsLock"))
-            })
-            document.addEventListener('keydown', (event) => {
-                  if(event.key === 'Shift') {
-                        document.addEventListener('keydown', (e) => {
-                              if(e.code === 'AltLeft') {
-                                    e.preventDefault()
-                                    console.log('asd')
-                              } else {
-                              }
-                        })
-                  }
             })
       }
 }
