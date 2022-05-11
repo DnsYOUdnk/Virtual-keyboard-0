@@ -1,8 +1,8 @@
-import KeyboardData from './KeyboardData.js';
+import KeyboardData from './KeyboardData';
 
 function Keyboard() {
   const keyboardProperties = localStorage.getItem('keyboardProperties') ? JSON.parse(localStorage.getItem('keyboardProperties')) : { lang: 'En', capsOn: false };
-  let shiftOn = [false, '', false];
+  const shiftOn = [false, '', false];
 
   this.init = () => {
     this.create();
@@ -35,15 +35,15 @@ function Keyboard() {
   };
 
   this.getKeys = () => {
-    let newKeyboardData = KeyboardData;
-    let { lang, capsOn } = keyboardProperties;
+    const newKeyboardData = KeyboardData;
+    const { lang, capsOn } = keyboardProperties;
     let keyboardKeys = '';
 
-    newKeyboardData.forEach(element => {
-      let nameKey = Object.keys(element)[0];
-      let { key, shiftKey = key } = element[nameKey]['value' + lang];
+    newKeyboardData.forEach((element) => {
+      const nameKey = Object.keys(element)[0];
+      let { key, shiftKey = key } = element[nameKey][`value${lang}`];
       key = key.length === 1 && capsOn ? key.toUpperCase() : key;
-      let shiftKeyCap = capsOn ? shiftKey.toLowerCase() : shiftKey.toUpperCase();
+      const shiftKeyCap = capsOn ? shiftKey.toLowerCase() : shiftKey.toUpperCase();
       shiftKey = shiftKey.length === 1 && shiftOn ? shiftKeyCap : shiftKey;
       keyboardKeys += `
                                     <div class="${nameKey} ${nameKey === 'CapsLock' && capsOn ? 'active' : ''} ${nameKey === shiftOn[1] && shiftOn[0] ? 'active__press' : ''} keyboard__keys">
@@ -79,16 +79,16 @@ function Keyboard() {
         shiftOn[2] = true;
       }
       this.pressKeyKeybord(event);
-      let keySymbol = KeyboardData.filter((item) => Object.keys(item)[0] === event.code);
-      keySymbol = keySymbol.map(item => {
-        let res = item[Object.keys(item)[0]]['value' + keyboardProperties.lang][(!shiftOn[0] ? 'key' : 'shiftKey')];
-        res = !res ? item[Object.keys(item)[0]]['value' + keyboardProperties.lang].key : res;
-        return res;
-      })[0];
-      if (keySymbol === undefined) {
+      let keySymbol = KeyboardData.filter((item) => Object.keys(item)[0] === event.code)[0];
+      if (!keySymbol) {
         this.popUp();
         return;
-      } if (keySymbol.length === 1 && keyboardProperties.capsOn && shiftOn[0]) {
+      }
+      let newKey = keySymbol[Object.keys(keySymbol)[0]][`value${keyboardProperties.lang}`][(!shiftOn[0] ? 'key' : 'shiftKey')];
+      newKey = !newKey ? keySymbol[Object.keys(keySymbol)[0]][`value${keyboardProperties.lang}`].key : newKey;
+      keySymbol = newKey;
+
+      if (keySymbol.length === 1 && keyboardProperties.capsOn && shiftOn[0]) {
         keySymbol = keySymbol.toLowerCase();
       } else if (keySymbol.length === 1 && keyboardProperties.capsOn) {
         keySymbol = keySymbol.toUpperCase();
@@ -125,7 +125,7 @@ function Keyboard() {
 
   this.pressKeyKeybord = (event) => {
     const arrKeys = document.querySelectorAll('.keyboard__keys');
-    arrKeys.forEach(item => {
+    arrKeys.forEach((item) => {
       if (item.classList.contains(event.code)) {
         item.classList.add('active__press');
       }
@@ -134,13 +134,13 @@ function Keyboard() {
 
   this.addEventKeysMouse = () => {
     const arrKeys = document.querySelectorAll('.keyboard__keys');
-    arrKeys.forEach(item => {
+    arrKeys.forEach((item) => {
       item.addEventListener('click', (e) => {
         if (e.target.classList.contains('CapsLock')) {
           keyboardProperties.capsOn = !keyboardProperties.capsOn;
           this.getKeys();
         } else {
-          let textIn = e.target.classList[0] === 'Space' ? ' ' : e.target.innerText;
+          const textIn = e.target.classList[0] === 'Space' ? ' ' : e.target.innerText;
           this.inputTextKeyboard(textIn);
         }
       });
@@ -151,10 +151,10 @@ function Keyboard() {
 
   this.inputTextKeyboard = (keySym) => {
     let valueKey = keySym.length === 1 ? keySym : '';
-    let cursorPlace = this.textareaItem.selectionStart;
+    const cursorPlace = this.textareaItem.selectionStart;
 
     const focusArea = (btn) => {
-      let placeC = btn === 'Del' ? cursorPlace : cursorPlace - 1;
+      const placeC = btn === 'Del' ? cursorPlace : cursorPlace - 1;
       textInput = textInput.split('').filter((_, index) => index !== placeC).join('');
       this.textareaItem.value = textInput;
       this.textareaItem.selectionEnd = placeC < 0 ? 0 : placeC;
@@ -162,14 +162,14 @@ function Keyboard() {
       this.textareaItem.focus();
     };
     const changeArea = (value) => {
-      let newPlace = cursorPlace - 1 < 0 ? 0 : cursorPlace - 1;
+      const newPlace = cursorPlace - 1 < 0 ? 0 : cursorPlace - 1;
       if (cursorPlace === 0 && textInput.length > 0) {
         textInput = textInput.split('');
         textInput.unshift(value);
         textInput = textInput.join('');
       } else if (textInput.length > 0) {
         textInput = textInput.split('').map((item, index) => {
-          let newItem = index === newPlace ? item + value : item;
+          const newItem = index === newPlace ? item + value : item;
           return newItem;
         }).join('');
       } else {

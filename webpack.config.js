@@ -5,57 +5,57 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
-const developServer = (isDev) => !isDev ? {} : {
+const developServer = (isDev) => (!isDev ? {} : {
   devServer: {
     open: true,
     hot: true,
-    port: 8080
-  }
-};
+    port: 8080,
+  },
+});
 
-const esLintPlugin = (isDev) => isDev ? [] : [new ESLintPlugin({ extensions: ['js'] })];
+const esLintPlugin = (isDev) => (isDev ? [] : [new ESLintPlugin({ extensions: ['js'] })]);
 
 module.exports = ({ develop }) => ({
   mode: develop ? 'development' : 'production',
   devtool: develop ? 'inline-source-map' : false,
   entry: {
-    app: './src/index.js'
+    app: './src/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'virtual_keyboard'),
     filename: 'virtual_keyboard.[contenthash].js',
-    assetModuleFilename: 'assets/[hash][ext]'
+    assetModuleFilename: 'assets/[hash][ext]',
   },
   module: {
     rules: [
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
-        type: 'asset/resource'
+        type: 'asset/resource',
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf)$/i,
-        type: 'asset/resource'
+        type: 'asset/resource',
       },
       {
         test: /\.css$/i,
-        use: [MiniCSSExtractPlugin.loader, 'css-loader']
-      }
-    ]
+        use: [MiniCSSExtractPlugin.loader, 'css-loader'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.html',
     }),
     new MiniCSSExtractPlugin({
-      filename: 'virtual_keyboard.[contenthash].css'
+      filename: 'virtual_keyboard.[contenthash].css',
     }),
     new CopyPlugin({
       patterns: [
-        { from: './public' }
-      ]
+        { from: './public' },
+      ],
     }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-    ...esLintPlugin(develop)
+    ...esLintPlugin(develop),
   ],
-  ...developServer(develop)
+  ...developServer(develop),
 });

@@ -2,15 +2,14 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
-    'airbnb-base/legacy',
-    'eslint:recommended'
+    'airbnb-base',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   rules: {
     'object-curly-spacing': ['error', 'always'],
@@ -22,6 +21,10 @@ module.exports = {
     'no-process-exit': 'off',
     'object-shorthand': 'off',
     'class-methods-use-this': 'off',
-    'linebreak-style': ['error', 'windows']
-  }
+    'linebreak-style': ['error', 'windows'],
+    "import/no-unresolved": [
+      2,
+      { "caseSensitive": false }
+   ]
+  },
 };

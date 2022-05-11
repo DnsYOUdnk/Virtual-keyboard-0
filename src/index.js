@@ -1,7 +1,5 @@
 import './style.css';
-import keyboard from './components/Keyboard.js';
+import keyboard from './components/Keyboard';
 
-const resultKeyboard = () => {
-  return keyboard;
-};
+const resultKeyboard = () => keyboard;
 resultKeyboard();

@@ -3,748 +3,748 @@ const KeyboardData = [
     Backquote: {
       valueEn: {
         key: '`',
-        shiftKey: '~'
+        shiftKey: '~',
       },
       valueRu: {
         key: 'ё',
-        shiftKey: 'Ё'
-      }
-    }
+        shiftKey: 'Ё',
+      },
+    },
   },
   {
     Digit1: {
       valueEn: {
         key: '1',
-        shiftKey: '!'
+        shiftKey: '!',
       },
       valueRu: {
         key: '1',
-        shiftKey: '!'
-      }
-    }
+        shiftKey: '!',
+      },
+    },
   },
   {
     Digit2: {
       valueEn: {
         key: '2',
-        shiftKey: '@'
+        shiftKey: '@',
       },
       valueRu: {
         key: '2',
-        shiftKey: '"'
-      }
-    }
+        shiftKey: '"',
+      },
+    },
   },
   {
     Digit3: {
       valueEn: {
         key: '3',
-        shiftKey: '#'
+        shiftKey: '#',
       },
       valueRu: {
         key: '3',
-        shiftKey: '№'
-      }
-    }
+        shiftKey: '№',
+      },
+    },
   },
   {
     Digit4: {
       valueEn: {
         key: '4',
-        shiftKey: '$'
+        shiftKey: '$',
       },
       valueRu: {
         key: '4',
-        shiftKey: ';'
-      }
-    }
+        shiftKey: ';',
+      },
+    },
   },
   {
     Digit5: {
       valueEn: {
         key: '5',
-        shiftKey: '%'
+        shiftKey: '%',
       },
       valueRu: {
         key: '5',
-        shiftKey: '%'
-      }
-    }
+        shiftKey: '%',
+      },
+    },
   },
   {
     Digit6: {
       valueEn: {
         key: '6',
-        shiftKey: '^'
+        shiftKey: '^',
       },
       valueRu: {
         key: '6',
-        shiftKey: ':'
-      }
-    }
+        shiftKey: ':',
+      },
+    },
   },
   {
     Digit7: {
       valueEn: {
         key: '7',
-        shiftKey: '&'
+        shiftKey: '&',
       },
       valueRu: {
         key: '7',
-        shiftKey: '?'
-      }
-    }
+        shiftKey: '?',
+      },
+    },
   },
   {
     Digit8: {
       valueEn: {
         key: '8',
-        shiftKey: '*'
+        shiftKey: '*',
       },
       valueRu: {
         key: '8',
-        shiftKey: '*'
-      }
-    }
+        shiftKey: '*',
+      },
+    },
   },
   {
     Digit9: {
       valueEn: {
         key: '9',
-        shiftKey: '('
+        shiftKey: '(',
       },
       valueRu: {
         key: '9',
-        shiftKey: '('
-      }
-    }
+        shiftKey: '(',
+      },
+    },
   },
   {
     Digit0: {
       valueEn: {
         key: '0',
-        shiftKey: ')'
+        shiftKey: ')',
       },
       valueRu: {
         key: '0',
-        shiftKey: ')'
-      }
-    }
+        shiftKey: ')',
+      },
+    },
   },
   {
     Minus: {
       valueEn: {
         key: '-',
-        shiftKey: '_'
+        shiftKey: '_',
       },
       valueRu: {
         key: '-',
-        shiftKey: '_'
-      }
-    }
+        shiftKey: '_',
+      },
+    },
   },
   {
     Equal: {
       valueEn: {
         key: '=',
-        shiftKey: '+'
+        shiftKey: '+',
       },
       valueRu: {
         key: '=',
-        shiftKey: '+'
-      }
-    }
+        shiftKey: '+',
+      },
+    },
   },
   {
     Backspace: {
       valueEn: {
-        key: 'Backspace'
+        key: 'Backspace',
       },
       valueRu: {
-        key: 'Backspace'
-      }
-    }
+        key: 'Backspace',
+      },
+    },
   },
   {
     Tab: {
       valueEn: {
-        key: 'Tab'
+        key: 'Tab',
       },
       valueRu: {
-        key: 'Tab'
-      }
-    }
+        key: 'Tab',
+      },
+    },
   },
   {
     KeyQ: {
       valueEn: {
         key: 'q',
-        shiftKey: 'Q'
+        shiftKey: 'Q',
       },
       valueRu: {
         key: 'й',
-        shiftKey: 'Й'
-      }
-    }
+        shiftKey: 'Й',
+      },
+    },
   },
   {
     KeyW: {
       valueEn: {
         key: 'w',
-        shiftKey: 'W'
+        shiftKey: 'W',
       },
       valueRu: {
         key: 'ц',
-        shiftKey: 'Ц'
-      }
-    }
+        shiftKey: 'Ц',
+      },
+    },
   },
   {
     KeyE: {
       valueEn: {
         key: 'e',
-        shiftKey: 'E'
+        shiftKey: 'E',
       },
       valueRu: {
         key: 'у',
-        shiftKey: 'У'
-      }
-    }
+        shiftKey: 'У',
+      },
+    },
   },
   {
     KeyR: {
       valueEn: {
         key: 'r',
-        shiftKey: 'R'
+        shiftKey: 'R',
       },
       valueRu: {
         key: 'к',
-        shiftKey: 'К'
-      }
-    }
+        shiftKey: 'К',
+      },
+    },
   },
   {
     KeyT: {
       valueEn: {
         key: 't',
-        shiftKey: 'T'
+        shiftKey: 'T',
       },
       valueRu: {
         key: 'е',
-        shiftKey: 'Е'
-      }
-    }
+        shiftKey: 'Е',
+      },
+    },
   },
   {
     KeyY: {
       valueEn: {
         key: 'y',
-        shiftKey: 'Y'
+        shiftKey: 'Y',
       },
       valueRu: {
         key: 'н',
-        shiftKey: 'Н'
-      }
-    }
+        shiftKey: 'Н',
+      },
+    },
   },
   {
     KeyU: {
       valueEn: {
         key: 'u',
-        shiftKey: 'U'
+        shiftKey: 'U',
       },
       valueRu: {
         key: 'г',
-        shiftKey: 'Г'
-      }
-    }
+        shiftKey: 'Г',
+      },
+    },
   },
   {
     KeyI: {
       valueEn: {
         key: 'i',
-        shiftKey: 'I'
+        shiftKey: 'I',
       },
       valueRu: {
         key: 'ш',
-        shiftKey: 'Ш'
-      }
-    }
+        shiftKey: 'Ш',
+      },
+    },
   },
   {
     KeyO: {
       valueEn: {
         key: 'o',
-        shiftKey: 'O'
+        shiftKey: 'O',
       },
       valueRu: {
         key: 'щ',
-        shiftKey: 'Щ'
-      }
-    }
+        shiftKey: 'Щ',
+      },
+    },
   },
   {
     KeyP: {
       valueEn: {
         key: 'p',
-        shiftKey: 'P'
+        shiftKey: 'P',
       },
       valueRu: {
         key: 'з',
-        shiftKey: 'З'
-      }
-    }
+        shiftKey: 'З',
+      },
+    },
   },
   {
     BracketLeft: {
       valueEn: {
         key: '[',
-        shiftKey: '{'
+        shiftKey: '{',
       },
       valueRu: {
         key: 'х',
-        shiftKey: 'Х'
-      }
-    }
+        shiftKey: 'Х',
+      },
+    },
   },
   {
     BracketRight: {
       valueEn: {
         key: ']',
-        shiftKey: '}'
+        shiftKey: '}',
       },
       valueRu: {
         key: 'ъ',
-        shiftKey: 'Ъ'
-      }
-    }
+        shiftKey: 'Ъ',
+      },
+    },
   },
   {
     Backslash: {
       valueEn: {
         key: '\\',
-        shiftKey: '|'
+        shiftKey: '|',
       },
       valueRu: {
         key: '\\',
-        shiftKey: '/'
-      }
-    }
+        shiftKey: '/',
+      },
+    },
   },
   {
     Delete: {
       valueEn: {
-        key: 'Del'
+        key: 'Del',
       },
       valueRu: {
-        key: 'Del'
-      }
-    }
+        key: 'Del',
+      },
+    },
   },
   {
     CapsLock: {
       valueEn: {
-        key: 'CapsLock'
+        key: 'CapsLock',
       },
       valueRu: {
-        key: 'CapsLock'
-      }
-    }
+        key: 'CapsLock',
+      },
+    },
   },
   {
     KeyA: {
       valueEn: {
         key: 'a',
-        shiftKey: 'A'
+        shiftKey: 'A',
       },
       valueRu: {
         key: 'ф',
-        shiftKey: 'Ф'
-      }
-    }
+        shiftKey: 'Ф',
+      },
+    },
   },
   {
     KeyS: {
       valueEn: {
         key: 's',
-        shiftKey: 'S'
+        shiftKey: 'S',
       },
       valueRu: {
         key: 'ы',
-        shiftKey: 'Ы'
-      }
-    }
+        shiftKey: 'Ы',
+      },
+    },
   },
   {
     KeyD: {
       valueEn: {
         key: 'd',
-        shiftKey: 'D'
+        shiftKey: 'D',
       },
       valueRu: {
         key: 'в',
-        shiftKey: 'В'
-      }
-    }
+        shiftKey: 'В',
+      },
+    },
   },
   {
     KeyF: {
       valueEn: {
         key: 'f',
-        shiftKey: 'F'
+        shiftKey: 'F',
       },
       valueRu: {
         key: 'а',
-        shiftKey: 'А'
-      }
-    }
+        shiftKey: 'А',
+      },
+    },
   },
   {
     KeyG: {
       valueEn: {
         key: 'g',
-        shiftKey: 'G'
+        shiftKey: 'G',
       },
       valueRu: {
         key: 'п',
-        shiftKey: 'П'
-      }
-    }
+        shiftKey: 'П',
+      },
+    },
   },
   {
     KeyH: {
       valueEn: {
         key: 'h',
-        shiftKey: 'H'
+        shiftKey: 'H',
       },
       valueRu: {
         key: 'р',
-        shiftKey: 'Р'
-      }
-    }
+        shiftKey: 'Р',
+      },
+    },
   },
   {
     KeyJ: {
       valueEn: {
         key: 'j',
-        shiftKey: 'J'
+        shiftKey: 'J',
       },
       valueRu: {
         key: 'о',
-        shiftKey: 'О'
-      }
-    }
+        shiftKey: 'О',
+      },
+    },
   },
   {
     KeyK: {
       valueEn: {
         key: 'k',
-        shiftKey: 'K'
+        shiftKey: 'K',
       },
       valueRu: {
         key: 'л',
-        shiftKey: 'Л'
-      }
-    }
+        shiftKey: 'Л',
+      },
+    },
   },
   {
     KeyL: {
       valueEn: {
         key: 'l',
-        shiftKey: 'L'
+        shiftKey: 'L',
       },
       valueRu: {
         key: 'д',
-        shiftKey: 'Д'
-      }
-    }
+        shiftKey: 'Д',
+      },
+    },
   },
   {
     Semicolon: {
       valueEn: {
         key: ';',
-        shiftKey: ':'
+        shiftKey: ':',
       },
       valueRu: {
         key: 'ж',
-        shiftKey: 'Ж'
-      }
-    }
+        shiftKey: 'Ж',
+      },
+    },
   },
   {
     Quote: {
       valueEn: {
         key: "'",
-        shiftKey: '"'
+        shiftKey: '"',
       },
       valueRu: {
         key: 'э',
-        shiftKey: 'Э'
-      }
-    }
+        shiftKey: 'Э',
+      },
+    },
   },
   {
     Enter: {
       valueEn: {
-        key: 'Enter &crarr;'
+        key: 'Enter &crarr;',
       },
       valueRu: {
-        key: 'Enter &crarr;'
-      }
-    }
+        key: 'Enter &crarr;',
+      },
+    },
   },
   {
     ShiftLeft: {
       valueEn: {
-        key: 'Shift'
+        key: 'Shift',
       },
       valueRu: {
-        key: 'Shift'
-      }
-    }
+        key: 'Shift',
+      },
+    },
   },
   {
     IntlBackslash: {
       valueEn: {
         key: '\\',
-        shiftKey: '|'
+        shiftKey: '|',
       },
       valueRu: {
         key: '\\',
-        shiftKey: '/'
-      }
-    }
+        shiftKey: '/',
+      },
+    },
   },
   {
     KeyZ: {
       valueEn: {
         key: 'z',
-        shiftKey: 'Z'
+        shiftKey: 'Z',
       },
       valueRu: {
         key: 'я',
-        shiftKey: 'Я'
-      }
-    }
+        shiftKey: 'Я',
+      },
+    },
   },
   {
     KeyX: {
       valueEn: {
         key: 'x',
-        shiftKey: 'X'
+        shiftKey: 'X',
       },
       valueRu: {
         key: 'ч',
-        shiftKey: 'Ч'
-      }
-    }
+        shiftKey: 'Ч',
+      },
+    },
   },
   {
     KeyC: {
       valueEn: {
         key: 'c',
-        shiftKey: 'C'
+        shiftKey: 'C',
       },
       valueRu: {
         key: 'с',
-        shiftKey: 'С'
-      }
-    }
+        shiftKey: 'С',
+      },
+    },
   },
   {
     KeyV: {
       valueEn: {
         key: 'v',
-        shiftKey: 'V'
+        shiftKey: 'V',
       },
       valueRu: {
         key: 'м',
-        shiftKey: 'М'
-      }
-    }
+        shiftKey: 'М',
+      },
+    },
   },
   {
     KeyB: {
       valueEn: {
         key: 'b',
-        shiftKey: 'B'
+        shiftKey: 'B',
       },
       valueRu: {
         key: 'и',
-        shiftKey: 'И'
-      }
-    }
+        shiftKey: 'И',
+      },
+    },
   },
   {
     KeyN: {
       valueEn: {
         key: 'n',
-        shiftKey: 'N'
+        shiftKey: 'N',
       },
       valueRu: {
         key: 'т',
-        shiftKey: 'Т'
-      }
-    }
+        shiftKey: 'Т',
+      },
+    },
   },
   {
     KeyM: {
       valueEn: {
         key: 'm',
-        shiftKey: 'M'
+        shiftKey: 'M',
       },
       valueRu: {
         key: 'ь',
-        shiftKey: 'Ь'
-      }
-    }
+        shiftKey: 'Ь',
+      },
+    },
   },
   {
     Comma: {
       valueEn: {
         key: ',',
-        shiftKey: '<'
+        shiftKey: '<',
       },
       valueRu: {
         key: 'б',
-        shiftKey: 'Б'
-      }
-    }
+        shiftKey: 'Б',
+      },
+    },
   },
   {
     Period: {
       valueEn: {
         key: '.',
-        shiftKey: '>'
+        shiftKey: '>',
       },
       valueRu: {
         key: 'ю',
-        shiftKey: 'Ю'
-      }
-    }
+        shiftKey: 'Ю',
+      },
+    },
   },
   {
     Slash: {
       valueEn: {
         key: '/',
-        shiftKey: '?'
+        shiftKey: '?',
       },
       valueRu: {
         key: '.',
-        shiftKey: ','
-      }
-    }
+        shiftKey: ',',
+      },
+    },
   },
   {
     ArrowUp: {
       valueEn: {
-        key: '▲'
+        key: '▲',
       },
       valueRu: {
-        key: '▲'
-      }
-    }
+        key: '▲',
+      },
+    },
   },
   {
     ShiftRight: {
       valueEn: {
-        key: 'Shift'
+        key: 'Shift',
       },
       valueRu: {
-        key: 'Shift'
-      }
-    }
+        key: 'Shift',
+      },
+    },
   },
   {
     ControlLeft: {
       valueEn: {
-        key: 'Ctrl'
+        key: 'Ctrl',
       },
       valueRu: {
-        key: 'Ctrl'
-      }
-    }
+        key: 'Ctrl',
+      },
+    },
   },
   {
     MetaLeft: {
       valueEn: {
-        key: 'Win'
+        key: 'Win',
       },
       valueRu: {
-        key: 'Win'
-      }
-    }
+        key: 'Win',
+      },
+    },
   },
   {
     AltLeft: {
       valueEn: {
-        key: 'Alt'
+        key: 'Alt',
       },
       valueRu: {
-        key: 'Alt'
-      }
-    }
+        key: 'Alt',
+      },
+    },
   },
   {
     Space: {
       valueEn: {
-        key: ' '
+        key: ' ',
       },
       valueRu: {
-        key: ' '
-      }
-    }
+        key: ' ',
+      },
+    },
   },
   {
     AltRight: {
       valueEn: {
-        key: 'Alt'
+        key: 'Alt',
       },
       valueRu: {
-        key: 'Alt'
-      }
-    }
+        key: 'Alt',
+      },
+    },
   },
   {
     ControlRight: {
       valueEn: {
-        key: 'Ctrl'
+        key: 'Ctrl',
       },
       valueRu: {
-        key: 'Ctrl'
-      }
-    }
+        key: 'Ctrl',
+      },
+    },
   },
   {
     ArrowLeft: {
       valueEn: {
-        key: '◄'
+        key: '◄',
       },
       valueRu: {
-        key: '◄'
-      }
-    }
+        key: '◄',
+      },
+    },
   },
   {
     ArrowDown: {
       valueEn: {
-        key: '▼'
+        key: '▼',
       },
       valueRu: {
-        key: '▼'
-      }
-    }
+        key: '▼',
+      },
+    },
   },
   {
     ArrowRight: {
       valueEn: {
-        key: '►'
+        key: '►',
       },
       valueRu: {
-        key: '►'
-      }
-    }
-  }
+        key: '►',
+      },
+    },
+  },
 ];
 
 export default KeyboardData;
